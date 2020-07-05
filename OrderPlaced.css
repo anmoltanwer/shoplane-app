@@ -1,0 +1,203 @@
+body{
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+#header{
+    width: 100%;
+    box-shadow: 0 2px 5px #ccc;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 16px 8%;
+	z-index: 10
+}
+#main-div{
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4%;
+	margin-top: 100px;
+}
+#green-tick{
+	width: 200px;
+    height: 200px;
+    background-color: #49d049;
+    border-radius: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+    animation: popup 1s;
+	position: relative;
+}
+#green-tick i{
+	color: white;
+	font-size: 70px;
+	position: absolute;
+	top: 35%;
+	left: 30%;
+}
+.main-head{
+	font-size: 36px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+    margin: 0;
+    margin-top: 48px;
+    margin-bottom: 16px;
+}
+.sub-head{
+	font-size: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 16px;
+	margin-bottom: 150px;
+}
+#header>a{
+  text-decoration: none;
+   color: black;
+   cursor: pointer;
+}
+#main-logo{
+  font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-right: 16px;
+}
+#bold{
+font-weight: 800;
+}
+.nav-item{
+  text-decoration: none;
+    color: black;
+    margin-left: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#navbar{
+	display: flex;
+	flex-direction: row;
+}
+input{
+  width: 100%;
+    border: 1px solid rgb(245, 242, 242);
+    background-color: rgb(245, 242, 242);
+    box-sizing: border-box;
+    padding: 10px 24px 8px 48px;
+    color: black;
+    outline: none;
+}
+#header img{
+  width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+#cart-div{
+	position: relative;
+}
+#cart-div>i{
+font-size: 20px;
+}
+#cart-count {
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 600;
+    background-color: #009688;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    right: -12px;
+}
+#header i{
+  font-weight: 800;
+  position: relative;
+}
+#search-div{
+	display: flex;
+	border: 1px solid rgb(245, 242, 242);
+    background-color: rgb(245, 242, 242);
+}
+#search-div i {
+	padding: 10px;
+}
+footer{
+    width: 100%;
+    background-color: #1c1b1e;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 16px 8%;
+}
+
+.footer-heading{
+  text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+footer p{
+  text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0.8;
+}
+footer div{
+  padding: 20px 50px;
+}
+#edyoda-logo {
+    width: 128px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+@keyframes popup{
+0%{transform: scale(0);}
+60%{transform: scale(1.25);}
+100%{transform: scale(1);}
+}
+
+
+@media(max-width:768px) {
+	#navbar{
+		display: none;
+	}
+	#search-div{
+		display: none;
+	}
+	#avatar{
+		display: none;
+	}
+	#card-wrapper{
+	display: flex;
+	flex-direction: column;
+	}
+	
+	#card-wrapper-acc{
+	display: flex;
+	flex-direction: column;	
+	}
+	footer{
+	display: flex;
+    flex-direction:column;	
+	}
+}
